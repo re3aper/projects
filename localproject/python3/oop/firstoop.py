@@ -1,4 +1,4 @@
-class first:
+class First:
     name="Ivan Rashkov"
     age=34
     sex="M"
@@ -7,8 +7,14 @@ class first:
         print("age",":",self.age)
         print("sex",":",self.sex)
 
-firstp=first()
+firstp=First()
 firstp.func()
 
+class second(First):
+	def func2(self):
+         print("Anything good")
+  
+x=second()
+x.func2()
 
 
